@@ -1,6 +1,6 @@
 import numpy as np
 
-from .cascade.cascade_classifier import CascadeClassifier
+#from .cascade.cascade_classifier import CascadeClassifier
 from .config import GCTrainConfig
 from .fgnet import FGNet
 from .utils.log_utils import get_logger
