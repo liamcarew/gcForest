@@ -10,9 +10,12 @@ ATTN2: This package was developed by Mr.Ji Feng(fengj@lamda.nju.edu.cn). The rea
 import numpy as np
 #from tqdm import trange
 
-from .base_layer import BaseLayer
-from ..utils.debug_utils import repr_blobs_shape
-from ..utils.log_utils import get_logger
+#from .base_layer import BaseLayer
+from layers.base_layer import BaseLayer
+#from ..utils.debug_utils import repr_blobs_shape
+from utils.debug_utils import repr_blobs_shape
+#from ..utils.log_utils import get_logger
+from utils.log_utils import get_logger
 
 LOGGER = get_logger('gcforest.layers.fg_pool_layer')
 
