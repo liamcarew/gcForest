@@ -12,10 +12,14 @@ import os
 import os.path as osp
 import pickle
 
-from ..estimators import get_estimator_kfold
-from ..utils.config_utils import get_config_value
-from ..utils.log_utils import get_logger
-from ..utils.metrics import accuracy_pb
+#from ..estimators import get_estimator_kfold
+from estimators import get_estimator_kfold
+#from ..utils.config_utils import get_config_value
+from utils.config_utils import get_config_value
+#from ..utils.log_utils import get_logger
+from utils.log_utils import get_logger
+#from ..utils.metrics import accuracy_pb
+from utils.metrics import accuracy_pb
 
 LOGGER = get_logger('gcforest.cascade.cascade_classifier')
 
