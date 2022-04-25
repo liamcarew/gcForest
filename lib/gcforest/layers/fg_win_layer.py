@@ -10,12 +10,18 @@ ATTN2: This package was developed by Mr.Ji Feng(fengj@lamda.nju.edu.cn). The rea
 import numpy as np
 from sklearn.model_selection import StratifiedKFold
 
-from .base_layer import BaseLayer
-from ..estimators import get_estimator_kfold
-from ..utils.metrics import accuracy_pb, accuracy_win_vote, accuracy_win_avg
-from ..utils.win_utils import get_windows
-from ..utils.debug_utils import repr_blobs_shape
-from ..utils.log_utils import get_logger
+#from .base_layer import BaseLayer
+from layers.base_layer import BaseLayer
+#from ..estimators import get_estimator_kfold
+from estimators import get_estimator_kfold
+#from ..utils.metrics import accuracy_pb, accuracy_win_vote, accuracy_win_avg
+from utils.metrics import accuracy_pb, accuracy_win_vote, accuracy_win_avg
+#from ..utils.win_utils import get_windows
+from utils.win_utils import get_windows
+#from ..utils.debug_utils import repr_blobs_shape
+from utils.debug_utils import repr_blobs_shape
+#from ..utils.log_utils import get_logger
+from utils.log_utils import get_logger
 
 LOGGER = get_logger("gcforest.layers.fg_win_layer")
 
