@@ -55,6 +55,8 @@ class FGPoolLayer(BaseLayer):
                 #nw = int(w / win_x)
                 nh = (h - 1) / win_y + 1
                 nw = (w - 1) / win_x + 1
+                nh = int(nh)
+                nw = int(nw)
                 X_pool = np.empty(( n, c, nh, nw), dtype=np.float32)
                 #for k in trange(c, desc='loop channel'):
                 #    for di in trange(nh, desc='loop win_y'):
