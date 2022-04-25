@@ -10,8 +10,10 @@ ATTN2: This package was developed by Mr.Ji Feng(fengj@lamda.nju.edu.cn). The rea
 import os.path as osp
 import numpy as np
 
-from ..utils.log_utils import get_logger
-from ..utils.config_utils import get_config_value
+#from ..utils.log_utils import get_logger
+from utils.log_utils import get_logger
+#from ..utils.config_utils import get_config_value
+from utils.config_utils import get_config_value
 
 LOGGER = get_logger('gcforest.layers.base_layer')
 
