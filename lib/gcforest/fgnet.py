@@ -11,8 +11,10 @@ import numpy as np
 import os, os.path as osp
 import json
 
-from .layers import get_layer
-from .utils.log_utils import get_logger
+#from .layers import get_layer
+from layers import get_layer
+#from .utils.log_utils import get_logger
+from utils.log_utils import get_logger
 
 LOGGER = get_logger("gcforest.gcnet")
 
