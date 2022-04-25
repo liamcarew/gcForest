@@ -11,8 +11,10 @@ import os, os.path as osp
 import numpy as np
 from sklearn.model_selection import KFold, StratifiedKFold
 
-from ..utils.log_utils import get_logger
-from ..utils.cache_utils import name2path
+#from ..utils.log_utils import get_logger
+from utils.log_utils import get_logger
+#from ..utils.cache_utils import name2path
+from utils.cache_utils import name2path
 
 LOGGER = get_logger("gcforest.estimators.kfold_wrapper")
 
