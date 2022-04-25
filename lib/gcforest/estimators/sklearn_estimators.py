@@ -10,8 +10,10 @@ ATTN2: This package was developed by Mr.Ji Feng(fengj@lamda.nju.edu.cn). The rea
 #from sklearn.externals import joblib
 import joblib
 
-from .base_estimator import BaseClassifierWrapper
-from ..utils.log_utils import get_logger
+#from .base_estimator import BaseClassifierWrapper
+from estimators.base_estimator import BaseClassifierWrapper
+#from ..utils.log_utils import get_logger
+from utils.log_utils import get_logger
 
 LOGGER = get_logger('gcforest.estimators.sklearn_estimators')
 
