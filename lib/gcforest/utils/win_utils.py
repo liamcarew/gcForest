@@ -16,6 +16,8 @@ def get_windows_channel(X, X_win, des_id, nw, nh, win_x, win_y, stride_x, stride
     dj = des_id % win_x
     di = des_id / win_x % win_y
     k = des_id / win_x / win_y
+    k = int(k)
+    di = int(di)
     src = X[:, k, di:di+nh*stride_y:stride_y, dj:dj+nw*stride_x:stride_x].ravel()
     des = X_win[des_id, :]
     np.copyto(des, src)
@@ -41,6 +43,8 @@ def get_windows(X, win_x, win_y, stride_x=1, stride_y=1, pad_x=0, pad_y=0):
     nc = win_y * win_x * c
     nh = (h - win_y) / stride_y + 1
     nw = (w - win_x) / stride_x + 1
+    nh = int(nh)
+    nw = int(nw)
     X_win = np.empty(( nc, n * nh * nw), dtype=np.float32)
     LOGGER.info("get_windows_start: X.shape={}, X_win.shape={}, nw={}, nh={}, c={}, win_x={}, win_y={}, stride_x={}, stride_y={}".format(
                 X.shape, X_win.shape, nw, nh, c, win_x, win_y, stride_x, stride_y))
