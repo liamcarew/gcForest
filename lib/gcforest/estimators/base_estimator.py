@@ -10,8 +10,10 @@ ATTN2: This package was developed by Mr.Ji Feng(fengj@lamda.nju.edu.cn). The rea
 import os, os.path as osp
 import numpy as np
 
-from ..utils.log_utils import get_logger
-from ..utils.cache_utils import name2path
+#from ..utils.log_utils import get_logger
+from utils.log_utils import get_logger
+#from ..utils.cache_utils import name2path
+from utils.cache_utils import name2path
 
 LOGGER = get_logger("gcforest.estimators.base_estimator")
 
